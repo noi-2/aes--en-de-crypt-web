@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" spellcheck="false">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AES ( en | de ) crypt</title>
+    <style>
+      @keyframes label-color-animation{
+         0%{
+          color: rgba(0, 0, 0, 0.23);
+          opacity: 0;
+          filter: blur(.5px);
+        }
+        100%{
+          color:#1976d2;
+          opacity: 1;
+          filter:none;
+        }
+      }
+      @keyframes border-color-animation{
+        0%{
+          border-color: rgba(0, 0, 0, 0.23);
+          opacity: 0;
+          filter: blur(.5px);
+        }
+        100%{
+          border-color:#1976d2;
+          opacity: 1;
+          filter: none;
+        }
+      }
+      label{
+        animation:label-color-animation .6s linear;
+      }
+      fieldset{
+        animation: border-color-animation .6s linear;
+        /* transition: border-color .4s ease-in-out; */
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
